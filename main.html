@@ -1,32 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Certi Website</title>
+    <!-- The line below will apply the css file to our html page-->
+    <link rel = "stylesheet" href = "style.css">
+  </head>
   <body>
     <main>
-      <h1>Cool Car Bro!</h1>
-      <section>
-        <h2>VW golf</h2>
-        <!-- This is how you write a comment-->
-        <p> cool <a href= "https://bit.ly/40rPkA1" target="_blank">golf</a> bro!</p>
-        <p>fuck <a href="https://en.wikipedia.org/wiki/Toyota_Prius" target="_blank">the ops</a>, pussy boys</p>
-        <a href= "https://www.volkswagen.co.uk/en/new/golf.html#golf-r-black">
-          <figure>
-            <img src="https://bit.ly/40m3IK8" width="500" height="300" alt="cool golf">
-          </figure>
-        </a>
-      </section>
-      <section>
-        <h2>Toyota Yaris</h2>
-          <h3>Reasons the Yaris is certi:</h3>
-          <ul>
-            <li><em>0-60mph</em> in <em>9.6 seconds</em></li>
-            <li>Only <em>£5.50</em> from the nitty down the road</li>
-            <li>Costs like <em>60p</em> to fix</li>
-            <li>Does like <em>3 billion</em> miles</li>
-          </ul>
-          <figure>
-            <img src= "https://bit.ly/3YW0Qml" width="500" height="300" alt="Certi Yaris">
-            <figcaption>A certi Yaris</figcaption>
-          </figure>
-      </section>
-    </main>     
+      <div class = "title-card">
+        <h1>Cool Car Bro!</h1>
+      </div>
+      <div class = "vw">
+        <section>
+          <h2>VW golf</h2>
+          <hr>
+          <!-- This is how you write a comment-->
+           <article>
+             <p> cool <a href= "https://bit.ly/40rPkA1" target="_blank">golf</a> bro!</p>
+             <p>fuck <a href="https://en.wikipedia.org/wiki/Toyota_Prius" target="_blank">the ops</a>, pussy boys</p>  
+           </article>
+           <a href= "https://www.volkswagen.co.uk/en/new/golf.html#golf-r-black">
+            <figure>
+              <img src="https://bit.ly/40m3IK8" width="500" height="300" alt="cool golf">
+            </figure>
+          </a>
+        </section>
+      </div>
+      <div class = "Yaris">
+        <section>
+          <h2>Toyota Yaris</h2>
+          <hr>
+            <h3 class="subheading">Reasons the Yaris is certi:</h3>
+            <div class="list">
+              <ul>
+                <li><em>0-60mph</em> in <em>9.6 seconds</em></li>
+                <li>Only <em>£5.50</em> from the nitty down the road</li>
+                <li>Costs like <em>60p</em> to fix</li>
+                <li>Does like <em>3 billion</em> miles</li>
+              </ul>
+            </div>
+            <figure>
+              <img src= "https://bit.ly/3YW0Qml" width="500" height="300" alt="Certi Yaris">
+              <figcaption>A certi Yaris</figcaption>
+            </figure>
+            <h3 class="subheading">3 reasons why the Yaris is better than a shitty Prius:</h3>
+            <div class="list">
+              <ol>
+                <li>It's cheaper</li>
+                <li>It's quicker</li>
+                <li>Less freshies drive it</li>
+              </ol>
+          </div>
+            <figure>
+              <img src = "https://bit.ly/4hvrJV8" width="500" height="300" alt="Yaris vs Prius">
+              <figcaption>The <strong>GOAT</strong> vs Shitmobile</figcaption>
+            </figure>
+        </section>
+      </div>
+      <div class = "survey">
+        <section>
+          <h2>Car Survey</h2>
+          <hr>
+          <!-- The "#" will just refresh the page and is used as a placeholder as I have nowhere to send the form to-->
+          <form action = "#">
+            <fieldset>
+              <legend>Are you a whippers?</legend>
+              <label><input checked type = "radio" id = "whipper" name = "whipper status" value = "whipper">Certified whippers?</label>
+              <label><input type = "radio" id = "Not whipper" name = "whipper status" value = "Not whipper">Jokeman?</label>
+            </fieldset>
+            <fieldset>
+              <legend>What's your dream whip?</legend>
+              <!-- These have alternate versions of element, element-text association -->
+              <input checked id = "Yaris" name = "Car" type = "checkbox" value = "Yaris">
+              <label for = "Yaris">Yaris</label>
+              <input id = "VW Golf" name = "Car" type = "checkbox" value = "VW Golf">
+              <label for = "VW Golf">VW golf</label>
+              <input id = "In denial" name = "Car" type = "checkbox" value = "In denial">
+              <label for = "In denial">In denial</label>
+            </fieldset>
+            <legend>Enter your dream whip: (if you in denial)</legend>
+            <label class="input-label"><input required type = "text" name = "CarName" placeholder="Car name..."></label>
+            <button type = "submit">Submit</button>
+          </form>
+        </section>
+      </div>
+      </main>
+    <footer>
+      <p>No copyright blud I can't afford that shit</p>
+    </footer>    
   </body>
 </html>

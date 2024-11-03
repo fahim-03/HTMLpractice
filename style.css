@@ -1,0 +1,84 @@
+h1, h2 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p, fieldset, .list, .subheading {
+    text-align: center;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+body {
+    background-image: url(https://bit.ly/3UyPLF3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
+
+/* Center title and main sections */
+.title-card, .vw, .Yaris, .survey {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: darkgray;
+    padding: 10px;
+   
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Survey form styling */
+.survey form {
+    text-align: center; /* Centers form content */
+}
+
+label {
+    display: inline-flex; 
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 1.1em; /* Makes label text larger */
+}
+
+input[type="text"] {
+    width: 80%; /* Makes the text input wider */
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.input-label{
+    display: block;
+    width: 100%;
+}
+
+button {
+    font-size: 1.2em; /* Increases button font size */
+    padding: 10px 20px; /* Adds padding inside button */
+    margin-top: 10px; /* Adds space above the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/*FOOTER*/
+footer {
+    font-size: 14px;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
